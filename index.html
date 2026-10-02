@@ -1,33 +1,638 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Gatti Anna — South Indian tiffin in Viman Nagar, Pune</title>
-    <meta
-      name="description"
-      content="Gatti Anna is a pure-vegetarian South Indian tiffin kitchen in Viman Nagar, Pune. Ghee dosas, thatte idli, podi, upma and filter coffee. Rated 4.7, typically ₹200–400 per person."
-    />
-    <meta name="theme-color" content="#F7EFE0" />
-    <meta property="og:title" content="Gatti Anna — Viman Nagar, Pune" />
-    <meta
-      property="og:description"
-      content="Ghee dosas, thatte idli, podi, upma and filter coffee in Viman Nagar, Pune. Rated 4.7, typically ₹200–400 per person."
-    />
-    <meta property="og:type" content="website" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..900,0..100,0..1;1,9..144,400..900,0..100,0..1&family=Inter:wght@300..700&family=Caveat:wght@500..700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23201307'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23E9A826' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='4.5' fill='%23C9321B'/%3E%3C/svg%3E"
-    />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gatti Anna — South Indian cafe · Viman Nagar, Pune</title>
+<meta name="description" content="Gatti Anna is a pure-vegetarian South Indian cafe in Viman Nagar, Pune. Ghee dosas, thatte idlis, uttapams and filter coffee. Rated 4.7; typical spend ₹200–400.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='42' fill='%232a1b12'/%3E%3Ccircle cx='50' cy='50' r='26' fill='none' stroke='%23dda032' stroke-width='6' stroke-dasharray='10 12'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%23c4401f'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Outfit:wght@300..800&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Gatti Anna",
+  "servesCuisine": "South Indian",
+  "priceRange": "₹200–400",
+  "address": { "@type": "PostalAddress", "addressLocality": "Viman Nagar", "addressRegion": "Pune, Maharashtra", "addressCountry": "IN" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "bestRating": "5" }
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="progress" role="presentation" aria-hidden="true"><span></span></div>
+
+<!-- ============================ NAV ============================ -->
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="nav__brand" href="#top" aria-label="Gatti Anna — back to top">
+      <span class="mark" aria-hidden="true">
+        <svg width="34" height="34" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="#2a1b12" stroke-width="7" stroke-dasharray="12 10"/><circle cx="50" cy="50" r="11" fill="#c4401f"/></svg>
+      </span>
+      Gatti&nbsp;Anna
+    </a>
+    <nav aria-label="Sections">
+      <ul class="nav__links">
+        <li><a href="#mood" data-spy="mood">The room</a></li>
+        <li><a href="#menu" data-spy="menu">Menu</a></li>
+        <li><a href="#rating" data-spy="rating">Word of mouth</a></li>
+        <li><a href="#visit" data-spy="visit">Visit</a></li>
+      </ul>
+    </nav>
+    <a class="nav__rating" href="#rating" aria-label="Rated 4.7 — see word of mouth">
+      <svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8-6.1-3.5-6.1 3.5 1.4-6.8L2.2 9.1l6.9-.8z" fill="#2a1b12"/></svg>
+      4.7
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============================ HERO ============================ -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="hero__blobs" aria-hidden="true">
+    <span class="blob blob--leaf" data-px="0.05"></span>
+    <span class="blob blob--rose" data-px="-0.04"></span>
+    <span class="blob blob--gold" data-px="0.08"></span>
+  </div>
+
+  <div class="hero__rings" aria-hidden="true" data-spin="0.02">
+    <svg viewBox="0 0 600 600">
+      <circle cx="300" cy="300" r="292" fill="rgba(221,160,50,0.10)"/>
+      <g class="ring-a">
+        <circle cx="300" cy="300" r="268" fill="none" stroke="#2a1b12" stroke-width="3.5" stroke-dasharray="4 22" stroke-linecap="round" opacity="0.55"/>
+      </g>
+      <g class="ring-b">
+        <circle cx="300" cy="300" r="228" fill="none" stroke="#c4401f" stroke-width="3" stroke-dasharray="2 30" stroke-linecap="round" opacity="0.5"/>
+      </g>
+      <g class="ring-a">
+        <circle cx="300" cy="300" r="188" fill="none" stroke="#3f7a4c" stroke-width="2.5" stroke-dasharray="26 18" stroke-linecap="round" opacity="0.35"/>
+      </g>
+    </svg>
+  </div>
+
+  <svg class="hero__steam" viewBox="0 0 120 130" aria-hidden="true" data-px="-0.06">
+    <path d="M30 122 C 22 100, 40 88, 32 66 C 26 48, 38 36, 33 14"/>
+    <path d="M60 126 C 52 102, 70 90, 61 68 C 54 50, 66 34, 60 8"/>
+    <path d="M90 122 C 82 100, 100 88, 91 66 C 85 48, 97 36, 92 14"/>
+  </svg>
+
+  <div class="wrap hero__content">
+    <p class="hero__kicker" data-reveal><span class="pulse" aria-hidden="true"></span> Viman Nagar · Pune · South Indian cafe</p>
+
+    <h1 id="hero-title" data-reveal style="--d:.08s">
+      <span class="line">GATTI</span>
+      <span class="line"><span class="anna">Anna</span><span class="plate-dot">.</span></span>
+    </h1>
+
+    <p class="hero__sub" data-reveal style="--d:.16s">
+      A <strong>pure-vegetarian South Indian counter</strong> in Viman Nagar, Pune —
+      ghee dosas, thatte idlis and filter coffee, landing on banana leaves and wood.
+    </p>
+
+    <div class="hero__cta" data-reveal style="--d:.24s">
+      <a class="btn" href="#menu">Explore the menu <span class="arr" aria-hidden="true">↓</span></a>
+      <a class="btn btn--ghost" href="#visit">Plan your visit</a>
+    </div>
+
+    <ul class="hero__facts" data-reveal style="--d:.32s">
+      <li>★ 4.7 — listing rating</li>
+      <li>₹200–400 — approx. spend</li>
+      <li>50 items on the listed menu</li>
+      <li>Pet friendly, says the door</li>
+    </ul>
+  </div>
+
+  <div class="hero__cue" aria-hidden="true">
+    <span class="hand">scroll for the good stuff</span>
+    <span class="drip"></span>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Ghee dosa ✦ Thatte idli ✦ Medu vada ✦ Uttapam ✦ Filter coffee ✦ Kesari bath ✦ Upma ✦ Akki roti ✦</span>
+      <span>Ghee dosa ✦ Thatte idli ✦ Medu vada ✦ Uttapam ✦ Filter coffee ✦ Kesari bath ✦ Upma ✦ Akki roti ✦</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ MOOD ============================ -->
+<section class="mood" id="mood" aria-labelledby="mood-title">
+  <div class="wrap mood__grid">
+    <div>
+      <p class="eyebrow" data-reveal>The room</p>
+      <h2 id="mood-title" data-reveal style="--d:.06s">Meals <span class="hand" style="font-size:.62em">&amp;</span> <em>memories</em> are made here.</h2>
+      <span class="mood__wallnote" data-reveal style="--d:.12s">↑ literally — it's painted on the wall</span>
+
+      <div class="mood__body" data-reveal style="--d:.18s">
+        <p>Gatti Anna is a pure-vegetarian South Indian cafe in Viman Nagar, Pune — an open counter
+           with the menu board glowing above it and plates arriving on banana leaves and wooden platters.</p>
+        <p>The room does its own talking: <strong>“Meals and memories are made here”</strong> hangs by the plants,
+           the entry steps climb with <strong>“Welcome to Gatti Anna · Happy tummy · Healthy steps”</strong>,
+           and a pink poster by the door sets the house rule — <strong>“Tension lene ka nahi dene ka.”</strong></p>
+      </div>
+
+      <ul class="mood__chips" data-reveal style="--d:.24s">
+        <li>Menu board over the counter</li>
+        <li>Pet friendly — sign at the door</li>
+        <li>Indoor + pavement tables</li>
+        <li>“Taste of South India” on the counter front</li>
+      </ul>
+    </div>
+
+    <div class="collage" aria-label="Photos inside and outside Gatti Anna">
+      <figure class="ph ph--a" data-reveal data-px="0.03">
+        <img src="images/entry-stairs.jpg" alt="Entry steps at Gatti Anna painted with 'Welcome to Gatti Anna', 'Happy tummy' and 'Healthy steps', beside a decorated tree" loading="lazy">
+      </figure>
+      <figure class="ph ph--b" data-reveal style="--d:.08s" data-px="-0.04">
+        <img src="images/hall-arcs.jpg" alt="Dining hall with arched wall niches, plants and wooden tables at Gatti Anna" loading="lazy">
+      </figure>
+      <figure class="ph ph--c" data-reveal style="--d:.14s" data-px="0.05">
+        <img src="images/outdoor-tables.jpg" alt="Pavement table and chairs outside the cafe on a tree-lined Viman Nagar street" loading="lazy">
+      </figure>
+      <figure class="ph ph--d" data-reveal style="--d:.2s" data-px="-0.03">
+        <img src="images/hall-wide.jpg" alt="Wide view of the dining hall with guests seated at long tables" loading="lazy">
+      </figure>
+      <div class="note-card note-card--pink" data-reveal style="--d:.26s">
+        <span class="hand">Tension lene ka<br>nahi dene ka</span>
+        <small>the pink poster by the door</small>
+      </div>
+      <div class="note-card note-card--cream" data-reveal style="--d:.32s">
+        <span class="hand">Meals &amp; memories<br>are made here</span>
+        <small>painted on the wall</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ MENU ============================ -->
+<section class="menu-zone" id="menu" aria-labelledby="menu-title">
+  <div class="podi-strip" aria-hidden="true"></div>
+  <div class="wrap menu-head">
+    <p class="eyebrow" data-reveal>The menu board</p>
+    <h2 id="menu-title" data-reveal style="--d:.06s">Fifty items.<br><em>Twenty-three</em> dosas.</h2>
+    <p data-reveal style="--d:.12s">Everything below comes from Gatti Anna's listed menu — six categories,
+       fifty items, every single one vegetarian. Prices are shown exactly as listed.</p>
+    <p class="menu-note" data-reveal style="--d:.18s" role="note">
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 8h.01M11 12h2v5h-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      Items &amp; prices are from Gatti Anna's public listing and may change — please confirm in store.
+    </p>
+  </div>
+
+  <div class="wrap railbar">
+    <ul class="rail" aria-label="Menu categories">
+      <li><a href="#cat-tiffin" data-catlink="cat-tiffin">Mini tiffin <span class="cnt">3</span></a></li>
+      <li><a href="#cat-dosa" data-catlink="cat-dosa">Dosa <span class="cnt">23</span></a></li>
+      <li><a href="#cat-idli" data-catlink="cat-idli">Idli &amp; vada <span class="cnt">10</span></a></li>
+      <li><a href="#cat-uttapam" data-catlink="cat-uttapam">Uttapam <span class="cnt">6</span></a></li>
+      <li><a href="#cat-bhat" data-catlink="cat-bhat">Bhat &amp; roti <span class="cnt">4</span></a></li>
+      <li><a href="#cat-drinks" data-catlink="cat-drinks">Drinks <span class="cnt">4</span></a></li>
+    </ul>
+  </div>
+
+  <!-- ── 01 · MINI TIFFIN ─────────────────────────────────────── -->
+  <div class="wrap">
+  <article class="band" id="cat-tiffin" data-tone="sand" data-img="images/table-top.jpg" aria-labelledby="cat-tiffin-h">
+    <span class="band__ghost" aria-hidden="true" data-pxx="0.05">Tiffin</span>
+    <div class="band__head" data-reveal>
+      <p class="band__kicker"><span class="num">01</span> Category · 3 items</p>
+      <h3 id="cat-tiffin-h">Mini tiffin</h3>
+      <p class="band__lead">Three set plates, each built from the dosa, idli and bhat further down this menu.</p>
+    </div>
+    <ul class="items">
+      <li class="mi mi--set" data-reveal>
+        <div class="row"><span class="mi__name">Mini Tiffin 1</span><span class="mi__dots"></span><span class="mi__price">₹235</span></div>
+        <span class="sub">1 Ghee Dosa + Button Idli [6 Pieces] + Kesari Bath + Khara Bhat</span>
+      </li>
+      <li class="mi mi--set" data-reveal style="--d:.06s">
+        <div class="row"><span class="mi__name">Mini Tiffin 2</span><span class="mi__dots"></span><span class="mi__price">₹245</span></div>
+        <span class="sub">1 Uttapam + Button Idli [6 Pieces] + Kesari Bath + Khara Bhat</span>
+      </li>
+      <li class="mi mi--set" data-reveal style="--d:.12s">
+        <div class="row"><span class="mi__name">Mini Tiffin 3</span><span class="mi__dots"></span><span class="mi__price">₹200</span></div>
+        <span class="sub">Thatte Ghee Podi Idli [1 Piece] + Medu Vada [1 Piece] + Kesari Bhat</span>
+      </li>
+    </ul>
+    <p class="band__foot">Set contents as listed on the menu.</p>
+  </article>
+  </div>
+
+  <!-- ── 02 · DOSA ────────────────────────────────────────────── -->
+  <div class="wrap">
+  <article class="band" id="cat-dosa" data-tone="dark" data-img="images/podi-ghee.jpg" aria-labelledby="cat-dosa-h">
+    <span class="band__ghost" aria-hidden="true" data-pxx="0.05">Dosa</span>
+    <div class="band__head" data-reveal>
+      <p class="band__kicker"><span class="num">02</span> Category · 23 items</p>
+      <h3 id="cat-dosa-h">Dosa</h3>
+      <p class="band__lead">The longest list at the counter — twenty-three dosas, ghee-first, from a plain sada to a Founders Special.</p>
+    </div>
+
+    <div class="features">
+      <div class="fcard" data-reveal>
+        <div class="fcard__ph"><img src="images/podi-ghee.jpg" alt="A heaped mound of podi on a banana-leaf-lined steel plate with ghee being poured over it" loading="lazy"></div>
+        <div class="fcard__body">
+          <h4>Ghee Podi Masala Dosa</h4>
+          <span class="fcard__price">₹181</span>
+          <p class="sub">Piled with podi, finished with ghee — the counter's most-ordered dosa on the listing.</p>
+        </div>
+      </div>
+      <div class="fcard" data-reveal style="--d:.08s">
+        <div class="fcard__ph"><img src="images/table-top.jpg" alt="Overhead view of a crisp dosa and an uttapam on wooden platters with small chutney bowls" loading="lazy"></div>
+        <div class="fcard__body">
+          <h4>Founders Special Dosa</h4>
+          <span class="fcard__price">₹194</span>
+          <p class="sub">The top of the dosa list.</p>
+        </div>
+      </div>
+      <div class="fcard" data-reveal style="--d:.16s">
+        <div class="fcard__ph"><img src="images/cafe-plate.jpg" alt="A black plate with two small chutneys and a generously topped dish sprinkled with herbs" loading="lazy"></div>
+        <div class="fcard__body">
+          <h4>Ghee Garlic Roast Dosa</h4>
+          <span class="fcard__price">₹181</span>
+          <p class="sub">Flagged a bestseller on the listing.</p>
+          <div class="tags"><span class="tag tag--best">★ Bestseller</span></div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="items">
+      <li class="mi" data-reveal><span class="mi__name">Ghee Sada Dosa</span><span class="mi__dots"></span><span class="mi__price">₹129</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Masala Dosa</span><span class="mi__dots"></span><span class="mi__price">₹155</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Podi Masala Dosa</span><span class="mi__dots"></span><span class="mi__price">₹181</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Podi Plain Dosa</span><span class="mi__dots"></span><span class="mi__price">₹168</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Mysore Masala Dosa</span><span class="mi__dots"></span><span class="mi__price">₹181</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Mysore Plain Dosa</span><span class="mi__dots"></span><span class="mi__price">₹168</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Garlic Roast Dosa <span class="best-mark" title="Bestseller on the listing">★</span></span><span class="mi__dots"></span><span class="mi__price">₹181</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Open Butter Masala Dosa</span><span class="mi__dots"></span><span class="mi__price">₹181</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Pizza Dosa</span><span class="mi__dots"></span><span class="mi__price">₹181</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Basket Dosa</span><span class="mi__dots"></span><span class="mi__price">₹168</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Cut Dosa</span><span class="mi__dots"></span><span class="mi__price">₹168</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Set Dosa</span><span class="mi__dots"></span><span class="mi__price">₹142</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Rava Plain Dosa</span><span class="mi__dots"></span><span class="mi__price">₹129</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Rava Masala Dosa</span><span class="mi__dots"></span><span class="mi__price">₹155</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Rava Onion Dosa</span><span class="mi__dots"></span><span class="mi__price">₹168</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Ragi Dosa</span><span class="mi__dots"></span><span class="mi__price">₹155</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Ragi Onion Dosa</span><span class="mi__dots"></span><span class="mi__price">₹168</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Multigrain Dosa</span><span class="mi__dots"></span><span class="mi__price">₹155</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Tangy Tomato Dosa With Lotus Stem</span><span class="mi__dots"></span><span class="mi__price">₹170</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Founders Special Dosa</span><span class="mi__dots"></span><span class="mi__price">₹194</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Kids Special Dosa</span><span class="mi__dots"></span><span class="mi__price">₹143</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Plain Jain Dosa <span class="jain-mark" title="Jain preparation listed">Jain</span></span><span class="mi__dots"></span><span class="mi__price">₹129</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Podi Plain Jain Dosa <span class="jain-mark" title="Jain preparation listed">Jain</span><span class="best-mark" title="Bestseller on the listing">★</span></span><span class="mi__dots"></span><span class="mi__price">₹168</span></li>
+    </ul>
+    <p class="band__foot">“Jain” marks items the listing tags as a Jain preparation.</p>
+  </article>
+  </div>
+
+  <!-- ── 03 · IDLI & VADA ─────────────────────────────────────── -->
+  <div class="wrap">
+  <article class="band" id="cat-idli" data-tone="paper" data-img="images/thatte-idli.jpg" aria-labelledby="cat-idli-h">
+    <span class="band__ghost" aria-hidden="true" data-pxx="0.05">Idli</span>
+    <div class="band__head" data-reveal>
+      <p class="band__kicker"><span class="num">03</span> Category · 10 items</p>
+      <h3 id="cat-idli-h">Idli &amp; vada</h3>
+      <p class="band__lead">Steamed plates — button, thatte and podi — with medu vada alongside.</p>
+    </div>
+
+    <div class="features">
+      <div class="fcard" data-reveal>
+        <div class="fcard__ph"><img src="images/thatte-idli.jpg" alt="Thatte idli on a banana leaf with orange and green chutneys, sprinkled with podi" loading="lazy"></div>
+        <div class="fcard__body">
+          <h4>Ghee Button Idli [12 Pieces]</h4>
+          <span class="fcard__price">₹142</span>
+          <p class="sub">A dozen little ones, straight off the steamer.</p>
+        </div>
+      </div>
+      <div class="fcard" data-reveal style="--d:.08s">
+        <div class="fcard__ph"><img src="images/podi-ghee.jpg" alt="Thatte podi idli buried under podi on a banana leaf, ghee being poured over the top" loading="lazy"></div>
+        <div class="fcard__body">
+          <h4>Ghee Thatte Podi Idli</h4>
+          <span class="fcard__price">₹155</span>
+          <p class="sub">The plate-sized idli, buried in podi and ghee.</p>
+        </div>
+      </div>
+    </div>
+
+    <ul class="items">
+      <li class="mi" data-reveal><span class="mi__name">Idli</span><span class="mi__dots"></span><span class="mi__price">₹45</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Idli [2 Pieces]</span><span class="mi__dots"></span><span class="mi__price">₹116</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Button Idli [12 Pieces]</span><span class="mi__dots"></span><span class="mi__price">₹142</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Podi Idli</span><span class="mi__dots"></span><span class="mi__price">₹142</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Fried Idli</span><span class="mi__dots"></span><span class="mi__price">₹142</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Thatte Idli</span><span class="mi__dots"></span><span class="mi__price">₹129</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Plain Thatte Idli</span><span class="mi__dots"></span><span class="mi__price nil">Not listed</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Thatte Podi Idli</span><span class="mi__dots"></span><span class="mi__price">₹155</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Medu Vada</span><span class="mi__dots"></span><span class="mi__price">₹55</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Idli Vada Mix</span><span class="mi__dots"></span><span class="mi__price">₹103</span></li>
+    </ul>
+    <p class="band__foot">“Not listed” = no public price found for that item.</p>
+  </article>
+  </div>
+
+  <!-- ── 04 · UTTAPAM ─────────────────────────────────────────── -->
+  <div class="wrap">
+  <article class="band" id="cat-uttapam" data-tone="leaf" data-img="images/uttapam.jpg" aria-labelledby="cat-uttapam-h">
+    <span class="band__ghost" aria-hidden="true" data-pxx="0.05">Uttapam</span>
+    <div class="band__head" data-reveal>
+      <p class="band__kicker"><span class="num">04</span> Category · 6 items</p>
+      <h3 id="cat-uttapam-h">Uttapam</h3>
+      <p class="band__lead">Thick, ghee-finished pancakes in six listed variations — there's even a picture of one pinned up at the door.</p>
+    </div>
+
+    <div class="features">
+      <div class="fcard" data-reveal>
+        <div class="fcard__ph"><img src="images/uttapam.jpg" alt="A large uttapam topped with herbs served on a wooden platter, small bowls on the side" loading="lazy"></div>
+        <div class="fcard__body">
+          <h4>Ghee Tomato Onion Uttapam</h4>
+          <span class="fcard__price">₹168</span>
+          <p class="sub">Flagged a bestseller on the listing.</p>
+          <div class="tags"><span class="tag tag--best">★ Bestseller</span></div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="items">
+      <li class="mi" data-reveal><span class="mi__name">Ghee Onion Uttapam</span><span class="mi__dots"></span><span class="mi__price">₹155</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Tomato Uttapam</span><span class="mi__dots"></span><span class="mi__price">₹155</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Tomato Onion Uttapam <span class="best-mark" title="Bestseller on the listing">★</span></span><span class="mi__dots"></span><span class="mi__price">₹168</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Coconut Uttapam</span><span class="mi__dots"></span><span class="mi__price">₹155</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Ghee Mix Veg Uttapam <span class="best-mark" title="Bestseller on the listing">★</span></span><span class="mi__dots"></span><span class="mi__price">₹155</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Kids Special Uttapam</span><span class="mi__dots"></span><span class="mi__price">₹116</span></li>
+    </ul>
+  </article>
+  </div>
+
+  <!-- ── 05 · BHAT & ROTI ─────────────────────────────────────── -->
+  <div class="wrap">
+  <article class="band" id="cat-bhat" data-tone="rose" data-img="images/cafe-plate.jpg" aria-labelledby="cat-bhat-h">
+    <span class="band__ghost" aria-hidden="true" data-pxx="0.05">Bhat</span>
+    <div class="band__head" data-reveal>
+      <p class="band__kicker"><span class="num">05</span> Category · 4 items</p>
+      <h3 id="cat-bhat-h">Bhat &amp; roti</h3>
+      <p class="band__lead">Upma, sheera and akki roti — the quieter end of the counter.</p>
+    </div>
+
+    <div class="features">
+      <div class="fcard" data-reveal>
+        <div class="fcard__ph">
+          <svg class="art" viewBox="0 0 400 340" role="img" aria-label="Illustration of a steaming bowl of sheera">
+            <rect width="400" height="340" fill="#e9b8a5"/>
+            <circle cx="200" cy="330" r="150" fill="#d89477"/>
+            <path d="M110 200 a90 60 0 0 0 180 0 z" fill="#2a1b12"/>
+            <ellipse cx="200" cy="200" rx="90" ry="26" fill="#dda032"/>
+            <ellipse cx="200" cy="198" rx="74" ry="19" fill="#e9c274"/>
+            <circle cx="172" cy="196" r="5" fill="#c4401f"/><circle cx="205" cy="203" r="5" fill="#c4401f"/><circle cx="228" cy="194" r="5" fill="#c4401f"/>
+            <path d="M170 160 c-8 -14 8 -18 0 -34 c-6 -12 6 -16 2 -28" fill="none" stroke="#2a1b12" stroke-width="5" stroke-linecap="round"/>
+            <path d="M205 158 c-8 -14 8 -18 0 -34 c-6 -12 6 -16 2 -28" fill="none" stroke="#2a1b12" stroke-width="5" stroke-linecap="round"/>
+            <path d="M238 160 c-8 -14 8 -18 0 -34" fill="none" stroke="#2a1b12" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="fcard__body">
+          <h4>Pineapple Sheera</h4>
+          <span class="fcard__price">₹102</span>
+          <p class="sub">Listed as kesari bhat. <em>(Illustration — no photo supplied for this dish.)</em></p>
+        </div>
+      </div>
+    </div>
+
+    <ul class="items">
+      <li class="mi" data-reveal><span class="mi__name">Plain Upma <span class="sub-inline" style="opacity:.65;font-weight:500;font-size:.85em">— khara bhat</span></span><span class="mi__dots"></span><span class="mi__price">₹80</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Podi Upma</span><span class="mi__dots"></span><span class="mi__price">₹100</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Pineapple Sheera <span style="opacity:.65;font-weight:500;font-size:.85em">— kesari bhat</span></span><span class="mi__dots"></span><span class="mi__price">₹102</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Akki Roti</span><span class="mi__dots"></span><span class="mi__price">₹155</span></li>
+    </ul>
+  </article>
+  </div>
+
+  <!-- ── 06 · DRINKS ──────────────────────────────────────────── -->
+  <div class="wrap">
+  <article class="band" id="cat-drinks" data-tone="gold" data-img="images/table-top.jpg" aria-labelledby="cat-drinks-h">
+    <span class="band__ghost" aria-hidden="true" data-pxx="0.05">Drinks</span>
+    <div class="band__head" data-reveal>
+      <p class="band__kicker"><span class="num">06</span> Category · 4 items</p>
+      <h3 id="cat-drinks-h">To drink</h3>
+      <p class="band__lead">Filter coffee, chai, Bournvita, water.</p>
+    </div>
+
+    <div class="features">
+      <div class="fcard" data-reveal>
+        <div class="fcard__ph">
+          <svg class="art" viewBox="0 0 400 340" role="img" aria-label="Illustration of a South Indian filter coffee dabara and tumbler">
+            <rect width="400" height="340" fill="#2a1b12"/>
+            <circle cx="200" cy="215" r="128" fill="#dda032" opacity="0.28"/>
+            <path d="M139 176 h122 l-10 96 a14 14 0 0 1-14 12 h-74 a14 14 0 0 1-14-12 z" fill="#f6efe3" stroke="#100a05" stroke-width="5"/>
+            <path d="M139 176 h122 l-2 16 h-118 z" fill="#dda032" stroke="#100a05" stroke-width="5"/>
+            <ellipse cx="200" cy="176" rx="61" ry="12" fill="#b96f3f" stroke="#100a05" stroke-width="5"/>
+            <path d="M168 250 h64 l6 26 a8 8 0 0 1-8 10 h-60 a8 8 0 0 1-8-10 z" fill="#dda032" stroke="#100a05" stroke-width="5"/>
+            <path d="M182 130 c-8 -12 8 -16 0 -30" fill="none" stroke="#f6efe3" stroke-width="5" stroke-linecap="round"/>
+            <path d="M206 128 c-8 -12 8 -16 0 -30" fill="none" stroke="#f6efe3" stroke-width="5" stroke-linecap="round"/>
+            <path d="M228 132 c-6 -10 6 -14 2 -24" fill="none" stroke="#f6efe3" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="fcard__body">
+          <h4>Filter Coffee</h4>
+          <span class="fcard__price">₹59</span>
+          <p class="sub">The proper finish to a tiffin. <em>(Illustration — no photo supplied for this drink.)</em></p>
+        </div>
+      </div>
+    </div>
+
+    <ul class="items">
+      <li class="mi" data-reveal><span class="mi__name">Filter Coffee</span><span class="mi__dots"></span><span class="mi__price">₹59</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Masala Chai</span><span class="mi__dots"></span><span class="mi__price">₹45</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Bournvita <span class="best-mark" title="Bestseller on the listing" style="color:#7c2e1e">★</span></span><span class="mi__dots"></span><span class="mi__price">₹70</span></li>
+      <li class="mi" data-reveal><span class="mi__name">Mineral Water</span><span class="mi__dots"></span><span class="mi__price">₹20</span></li>
+    </ul>
+  </article>
+  </div>
+</section>
+
+<!-- ============================ RATING ============================ -->
+<section class="rating" id="rating" aria-labelledby="rating-title">
+  <div class="wrap">
+    <div class="rating__grid">
+      <div class="rating__big">
+        <p class="eyebrow" data-reveal>Word of mouth</p>
+        <div style="position:relative;display:inline-block;margin-top:14px">
+          <div class="rating__num" data-reveal><span id="rating-num">0.0</span></div>
+          <svg class="rating__circle" id="rating-circle" viewBox="0 0 320 220" aria-hidden="true" preserveAspectRatio="none">
+            <path pathLength="100" d="M30 130 C 10 60, 90 18, 165 16 C 250 14, 312 50, 306 108 C 300 168, 214 208, 132 202 C 70 197, 20 178, 30 130"/>
+          </svg>
+        </div>
+        <div class="rating__stars" data-reveal role="img" aria-label="4.7 out of 5 stars">
+          <svg viewBox="0 0 185 34" width="185" height="34" aria-hidden="true">
+            <defs>
+              <path id="st" d="M17 2l4.1 8.9 9.7 1.1-7.2 6.6 2 9.6-8.6-4.9-8.6 4.9 2-9.6L3.2 12l9.7-1.1z"/>
+              <clipPath id="clip94"><rect x="0" y="0" width="173.9" height="34"/></clipPath>
+            </defs>
+            <g fill="none" stroke="#e9c274" stroke-width="2">
+              <use href="#st" x="0"/><use href="#st" x="38"/><use href="#st" x="76"/><use href="#st" x="114"/><use href="#st" x="152"/>
+            </g>
+            <g fill="#dda032" clip-path="url(#clip94)">
+              <use href="#st" x="0"/><use href="#st" x="38"/><use href="#st" x="76"/><use href="#st" x="114"/><use href="#st" x="152"/>
+            </g>
+          </svg>
+        </div>
+        <p class="rating__scale" data-reveal>of 5, overall</p>
+        <p class="rating__src" data-reveal>Rating as given in the supplied listing details.</p>
+      </div>
+
+      <div>
+        <h2 id="rating-title" data-reveal style="font-size:clamp(2rem,4.6vw,3.4rem);font-weight:900">People leave notes <em style="color:var(--gold)">like these.</em></h2>
+        <div class="quotes" style="margin-top:30px">
+          <blockquote class="quote" data-reveal>
+            <p>The South Indian food was absolutely delicious and authentic. A special shoutout to Omkar from the staff—he was incredibly polite, attentive, and made sure we were well taken care of.”</p>
+            <footer>Diner review · public Zomato listing</footer>
+          </blockquote>
+          <blockquote class="quote" data-reveal style="--d:.08s">
+            <p>The ghee roast dosa is just exceptional. Try all their beverages as well. Pizza dosa is commendable. Super clean, hygenic food.”</p>
+            <footer>Diner review · public Zomato listing</footer>
+          </blockquote>
+          <blockquote class="quote" data-reveal style="--d:.16s">
+            <p>Beautiful place with amazing South Indian food and the sweetest staff! Highly recommend!”</p>
+            <footer>Diner review · public Zomato listing</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <div class="rating__strip" aria-label="More photos of the cafe">
+      <div class="s" data-reveal><img src="images/facade-day.jpg" alt="Gatti Anna shopfront in daylight with marigold garlands strung across the sign" loading="lazy"></div>
+      <div class="s" data-reveal style="--d:.06s"><img src="images/facade-sign.jpg" alt="Close-up of the mint and pink Gatti Anna signboard" loading="lazy"></div>
+      <div class="s" data-reveal style="--d:.12s"><img src="images/wall-art.jpg" alt="Ornate golden wall ornament hanging inside the cafe" loading="lazy"></div>
+      <div class="s" data-reveal style="--d:.18s"><img src="images/facade-night.jpg" alt="The Gatti Anna sign glowing above the counter at night, string lights overhead" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ VISIT ============================ -->
+<section class="visit" id="visit" aria-labelledby="visit-title">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Plan your visit</p>
+    <h2 id="visit-title" data-reveal style="--d:.06s">Find us in <em>Viman Nagar.</em></h2>
+    <p class="lede" data-reveal style="--d:.12s">Everything on this page sticks to what the supplied listing and the cafe's own
+       photos confirm. Anything still unconfirmed says so, plainly — no guessing.</p>
+
+    <div class="visit__grid">
+      <div class="v-card" data-reveal>
+        <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#2a1b12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span> Where</h3>
+        <p class="big">Viman Nagar,<br>Pune, Maharashtra</p>
+        <p class="fine">Street address: to be confirmed — the neighbourhood is what's confirmed. The link below searches the name, it is not a pinned location.</p>
+        <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Gatti%20Anna%20Viman%20Nagar%20Pune" target="_blank" rel="noopener">Search “Gatti Anna” on Google Maps ↗</a>
+      </div>
+
+      <div class="v-card" data-reveal style="--d:.08s">
+        <h3><span class="ic"><svg viewBox="0 0 24 24"><text x="12" y="17.5" text-anchor="middle" font-size="17" font-weight="800" fill="#2a1b12" font-family="Outfit, system-ui, sans-serif">₹</text></svg></span> Spend</h3>
+        <p class="big">₹200–400</p>
+        <p>Typical spend, per the supplied listing details.</p>
+        <p class="fine">Approximate — not a quote for any specific order. Listed menu prices run from ₹20 (water) to ₹245 (Mini Tiffin 2).</p>
+      </div>
+
+      <div class="v-card" data-reveal>
+        <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#2a1b12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span> Good to know</h3>
+        <ul class="know-list">
+          <li><svg viewBox="0 0 24 24" fill="#3f7a4c"><rect x="3" y="3" width="18" height="18" rx="4" fill="none" stroke="#3f7a4c" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="#3f7a4c"/></svg>
+            <span>Pure vegetarian <small>every item on the listed menu is vegetarian</small></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#3f7a4c" stroke-width="2" stroke-linecap="round"><path d="M12 3c4 4 4 9 0 13-4-4-4-9 0-13z"/><path d="M12 16v5"/></svg>
+            <span>Jain preparations <small>noted on two dosas in the listing</small></span></li>
+          <li><svg viewBox="0 0 24 24" fill="#2a1b12"><circle cx="7.5" cy="9" r="2.2"/><circle cx="12" cy="7.2" r="2.2"/><circle cx="16.5" cy="9" r="2.2"/><path d="M12 12c-3 0-5.4 2-5.4 4.4 0 1.5 1.2 2.6 2.7 2.6 1 0 1.8-.5 2.7-.5s1.7.5 2.7.5c1.5 0 2.7-1.1 2.7-2.6C17.4 14 15 12 12 12z"/></svg>
+            <span>Pet friendly <small>sign at the door</small></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#2a1b12" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="7" r="3.4"/><path d="M5 21c0-4 3.1-6.5 7-6.5s7 2.5 7 6.5"/></svg>
+            <span>Indoor + pavement tables <small>as seen in the photos</small></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#c4401f" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M6 6l12 12"/></svg>
+            <span>House rule: no outside food <small>sign at the door</small></span></li>
+        </ul>
+      </div>
+
+      <div class="v-card v-card--tbc" data-reveal style="--d:.08s">
+        <h3><span class="ic" style="background:var(--rose)"><svg viewBox="0 0 24 24" fill="none" stroke="#2a1b12" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 0 1 4.9.6c0 1.7-2.4 2-2.4 3.4"/><path d="M12 16.8h.01"/></svg></span> Still to confirm</h3>
+        <p>These details aren't verified yet, so they're shown as placeholders rather than guesses:</p>
+        <ul class="tbc-list">
+          <li><b>Opening hours</b><span class="pill">to be confirmed</span></li>
+          <li><b>Street address</b><span class="pill">to be confirmed</span></li>
+          <li><b>Phone</b><span class="pill">to be confirmed</span></li>
+          <li><b>Reservations</b><span class="pill">to be confirmed</span></li>
+          <li><b>Delivery &amp; takeaway</b><span class="pill">to be confirmed</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ END ============================ -->
+<section class="end" id="end" aria-labelledby="end-title">
+  <div class="end__lights" aria-hidden="true">
+    <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+      <path d="M0 8 Q 360 78 720 34 T 1440 22" fill="none" stroke="rgba(246,239,227,0.35)" stroke-width="2"/>
+      <g fill="#dda032">
+        <circle class="bulb" cx="120" cy="34" r="5"/><circle class="bulb" cx="260" cy="48" r="5"/>
+        <circle class="bulb" cx="400" cy="52" r="5"/><circle class="bulb" cx="540" cy="48" r="5"/>
+        <circle class="bulb" cx="680" cy="38" r="5"/><circle class="bulb" cx="820" cy="32" r="5"/>
+        <circle class="bulb" cx="960" cy="36" r="5"/><circle class="bulb" cx="1100" cy="34" r="5"/>
+        <circle class="bulb" cx="1240" cy="28" r="5"/><circle class="bulb" cx="1380" cy="24" r="5"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="end__rings" aria-hidden="true" data-spin="0.03">
+    <svg viewBox="0 0 600 600"><g class="ring-a"><circle cx="300" cy="300" r="270" fill="none" stroke="#f6efe3" stroke-width="3" stroke-dasharray="4 26" stroke-linecap="round" opacity="0.6"/></g><g class="ring-b"><circle cx="300" cy="300" r="215" fill="none" stroke="#dda032" stroke-width="2.5" stroke-dasharray="30 20" stroke-linecap="round" opacity="0.5"/></g></svg>
+  </div>
+
+  <div class="wrap end__grid">
+    <div>
+      <p class="eyebrow" style="color:var(--gold-soft)" data-reveal>Until next time</p>
+      <h2 id="end-title" data-reveal style="--d:.06s">Come hungry.<br><em>Leave with a memory.</em></h2>
+      <span class="hand-note" data-reveal style="--d:.12s">— the wall insists they're made here</span>
+      <p class="lead" data-reveal style="--d:.18s">Gatti Anna · pure-veg South Indian counter · Viman Nagar, Pune.
+         Browse the fifty-item menu above, or pull up the map and watch for the sign.</p>
+      <div class="end__cta" data-reveal style="--d:.24s">
+        <a class="btn btn--cream" href="#menu">Back to the menu <span class="arr" aria-hidden="true">↑</span></a>
+        <a class="btn btn--outline-cream" href="https://www.google.com/maps/search/?api=1&amp;query=Gatti%20Anna%20Viman%20Nagar%20Pune" target="_blank" rel="noopener">Search Gatti Anna on the map ↗</a>
+      </div>
+    </div>
+    <figure class="end__ph" data-reveal style="--d:.15s">
+      <img src="images/facade-night.jpg" alt="The Gatti Anna sign glowing above the cafe counter at night, string lights overhead" loading="lazy">
+      <figcaption aria-hidden="true">the sign at night</figcaption>
+    </figure>
+  </div>
+
+  <footer class="foot">
+    <div class="wrap foot__grid">
+      <div>
+        <p class="foot__brand">GATTI ANNA</p>
+        <ul class="foot__facts">
+          <li>South Indian · pure veg</li>
+          <li>Viman Nagar, Pune</li>
+          <li>★ 4.7 — listing rating</li>
+          <li>₹200–400 — approx. spend</li>
+          <li>Pet friendly</li>
+        </ul>
+      </div>
+      <div class="foot__disc">
+        <p>Menu items, prices, bestseller and Jain tags are taken from Gatti Anna's public listing and may change — please confirm in store.</p>
+        <p>Rating (4.7) and typical spend (₹200–400) are as supplied; aggregator figures differ. Diner quotes appear verbatim from the public Zomato listing.</p>
+        <p>Opening hours, street address, phone and service options are unconfirmed, and are intentionally left as placeholders.</p>
+      </div>
+    </div>
+    <div class="wrap foot__line">
+      <span>A scroll-through-the-counter concept site, art-directed from the cafe's supplied photos and public listing information.</span>
+      <span class="hand">made with ghee, in Pune ✦</span>
+    </div>
+  </footer>
+</section>
+
+</main>
+
+<figure class="dish-preview" id="dish-preview" aria-hidden="true">
+  <img src="images/podi-ghee.jpg" alt="">
+  <figcaption>at Gatti Anna</figcaption>
+</figure>
+
+<script src="script.js" defer></script>
+</body>
 </html>
